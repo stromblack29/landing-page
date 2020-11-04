@@ -2,6 +2,7 @@
   <div>
     <LandingHeader title="แป้งพบบาคาร่า" link="https://www.sagameclub88aj.com/" />
     <Nuxt />
+    <LandingFooter title="แป้งพบบาคาร่า" />
   </div>
 </template>
 
