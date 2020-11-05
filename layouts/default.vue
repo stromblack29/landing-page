@@ -1,8 +1,8 @@
 <template>
   <div>
-    <LandingHeader title="แป้งพบบาคาร่า" link="https://www.sagameclub88aj.com/" />
+    <LandingHeader title="ไม้จิ้มฟัน ราคาถูก | ทำมาจากสมุนไพร" link="https://www.circus789.com/register.php" />
     <Nuxt />
-    <LandingFooter title="แป้งพบบาคาร่า" />
+    <LandingFooter title="ไม้จิ้มฟัน ราคาถูก | ทำมาจากสมุนไพร" />
   </div>
 </template>
 
