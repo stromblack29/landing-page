@@ -2,8 +2,8 @@
   <div class="">
     <div>
       <LandingSectionOne />
-      <LandingSectionTwo link="https://www.circus789.com/register.php" />
-      <LandingSectionProduct link="https://www.circus789.com/register.php" />
+      <LandingSectionTwo link="https://business.facebook.com/casiojib/?ref=your_pages" />
+      <LandingSectionProduct link="https://business.facebook.com/casiojib/?ref=your_pages" />
       <!-- <Logo /> -->
     </div>
   </div>
