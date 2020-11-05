@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LandingHeader title="ไม้จิ้มฟัน ราคาถูก | ทำมาจากสมุนไพร" link="https://www.circus789.com/register.php" />
+    <LandingHeader title="ไม้จิ้มฟัน ราคาถูก" link="https://www.circus789.com/register.php" />
     <Nuxt />
     <LandingFooter title="ไม้จิ้มฟัน ราคาถูก | ทำมาจากสมุนไพร" />
   </div>
