@@ -3,7 +3,7 @@ export default {
   ssr: false,
   target: 'static',
   router: {
-    base: '/landing-page/'
+    base: '/landing-page/dist'
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
