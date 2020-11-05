@@ -3,11 +3,7 @@ export default {
   ssr: false,
   target: 'static',
   router: {
-    base: '/landing-page/dist'
-  },
-   // Allows page refresh to work on github pages
-   generate: {
-    fallback: "404.html"
+    base: '/landing-page/'
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
