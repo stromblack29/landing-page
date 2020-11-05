@@ -1,11 +1,10 @@
 <template>
-  <div class="container">
+  <div class="">
     <div>
-      <Logo />
-      <h1 class="title">
-        landing-1
-      </h1>
-      <LineButton />
+      <LandingSectionOne />
+      <LandingSectionTwo link="https://www.circus789.com/register.php" />
+      <LandingSectionProduct link="https://www.circus789.com/register.php" />
+      <!-- <Logo /> -->
     </div>
   </div>
 </template>

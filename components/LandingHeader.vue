@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- As a heading -->
-    <b-navbar toggleable :type="isScroll ? 'dark' : 'light'" :variant="isScroll ? 'dark' : 'light'" fixed="top" sticky>
+    <b-navbar toggleable :type="isScroll ? 'dark' : 'light'" :variant="isScroll ? 'dark' : 'light'" fixed="top">
       <b-navbar-brand tag="h1" class="mb-0">{{ Title }}</b-navbar-brand>
       <b-navbar-nav class="ml-auto">
         <b-button size="md" class="my-2 my-sm-0" :variant="isScroll ? 'outline-success' : 'success'" :href="Link" target="_blank">สมัครสมาชิก</b-button>
@@ -27,13 +27,12 @@
           <div class="col px-0">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-6 text-center">
-                <h1 class="text-white display-1">People stories</h1>
-                <h2 class="display-4 font-weight-normal text-white">The time is right now!</h2>
+                <h1 class="text-white display-1">ไม้จิ้มฟัน</h1>
+                <h2 class="display-4 font-weight-normal text-white">ไม้จิ้มฟัน ราคาถูก | ทำมาจากสมุนไพร</h2>
                 
                 <div class="btn-wrapper mt-4">
                   <a href="https://www.circus789.com/register.php" class="btn btn-warning btn-icon mt-3 mb-sm-0">
                     <!-- <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span> -->
-                    <b-icon icon="play"></b-icon>
                     <span class="btn-inner--text">Play now</span>
                   </a>
                   <LineButton />
