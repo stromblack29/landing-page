@@ -40,7 +40,10 @@ export default {
     computed: {
         Link() {
             return !this.link ? '#' : this.link;
-        }
+        },
+        isShowBet () {
+        return this.$store.state.global.isMob || this.$store.state.global.isThailand;
+      }
     },
     data () {
         return {

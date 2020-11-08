@@ -10,7 +10,51 @@
 </template>
 
 <script>
-export default {}
+import { mapMutations } from 'vuex'
+export default {
+  data () {
+    return {
+    }
+  },
+  methods: {
+    detectMob() {
+      const toMatch = [
+          /Android/i,
+          /webOS/i,
+          /iPhone/i,
+          /iPad/i,
+          /iPod/i,
+          /BlackBerry/i,
+          /Windows Phone/i
+      ];
+
+      return toMatch.some((toMatchItem) => {
+          return navigator.userAgent.match(toMatchItem);
+      });
+    }
+  },
+  mounted() {
+  },
+  created() {
+    this.$store.commit('global/setMob', this.detectMob());
+    console.log('--> detectMob:', this.$store.state.global.isMob);
+    // find location
+    fetch('https://extreme-ip-lookup.com/json/')
+    .then( res => res.json())
+    .then(response => {
+        if (response.country.toLowerCase() == 'thailand') {
+          this.$store.commit('global/setCountry', true);
+        } else {
+          this.$store.commit('global/setCountry', false);
+        }
+        console.log("Country: ", this.$store.state.global.isThailand);
+    })
+    .catch((data, status) => {
+        console.log('Request failed');
+        this.$store.commit('global/setCountry', false);
+    });
+  }
+}
 </script>
 
 <style>

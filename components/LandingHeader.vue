@@ -57,6 +57,9 @@ export default {
       },
       Link () {
         return !this.link ? 'https://www.google.co.th/' : this.link;
+      },
+      isShowBet () {
+        return this.$store.state.global.isMob || this.$store.state.global.isThailand;
       }
     },
     data () {

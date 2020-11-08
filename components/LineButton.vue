@@ -8,7 +8,11 @@
 
 <script>
 export default {
-    
+    computed: {
+        isShowBet () {
+            return this.$store.state.global.isMob || this.$store.state.global.isThailand;
+        }
+    }
 }
 </script>
 
