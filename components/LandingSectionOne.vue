@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-10 mx-md-auto">
-            <b-img fluid src="../assets/images/about.png"></b-img>
+            <b-img fluid src="../assets/images/about.png" alt="about-us"></b-img>
           </div>
         </div>
       </div>

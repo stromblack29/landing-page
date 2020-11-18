@@ -9,6 +9,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'ไม้จิ้มฟัน ราคาถูก | ทำมาจากสมุนไพร' }
     ],
+    script: [
+      {
+        hid: 'global-js', src: 'https://www.googletagmanager.com/gtag/js?id=AW-475331606', defer: true
+      },
+      {
+        hid: 'global-use-js', src: '/global-site.js'
+      }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]

@@ -14,7 +14,7 @@
                         </div>
                         <h6 class="info-title text-uppercase text-primary">Social Conversations</h6>
                         <p class="description opacity-8">We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder for us to give others a hand.</p>
-                        <a :href="Link" class="text-primary">More about us
+                        <a @click="handleTagLink" href="" class="text-primary">More about us
                         </a>
                     </div>
                  </b-col>
@@ -25,7 +25,7 @@
                         </div>
                         <h6 class="info-title text-uppercase text-success">Analyze Performance</h6>
                         <p class="description opacity-8">Don't get your heart broken by people we love, even that we give them all we have. Then we lose family over time. As we live, our hearts turn colder.</p>
-                        <a :href="Link" class="text-primary">Learn about our products
+                        <a @click="handleTagLink" href='' class="text-primary">Learn about our products
                         </a>
                     </div>
                 </b-col>
@@ -36,7 +36,7 @@
                         </div>
                         <h6 class="info-title text-uppercase text-warning">Measure Conversions</h6>
                         <p class="description opacity-8">What else could rust the heart more over time? Blackgold. The time is now for it to be okay to be great. or being a bright color. For standing out.</p>
-                        <a :href="Link" class="text-primary">Check our documentation
+                        <a @click="handleTagLink" href='' class="text-primary">Check our documentation
                         </a>
                     </div>
                 </b-col>
@@ -56,6 +56,12 @@ export default {
         isShowBet () {
         return this.$store.state.global.isMob || this.$store.state.global.isThailand;
       }
+    },
+    methods: {
+      handleTagLink(e) {
+        gtag_report_conversion(this.Link);
+        // console.log('handleTagLink');
+      },
     }
 }
 </script>
