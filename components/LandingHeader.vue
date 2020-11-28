@@ -7,7 +7,7 @@
         <b-button size="md" class="my-2 my-sm-0" :variant="isScroll ? 'outline-success' : 'success'" @click="handleTagLink" href="#">สมัครสมาชิก</b-button>
       </b-navbar-nav>
     </b-navbar>
-    <a onclick="handleTagLink" href="#">
+    <a @click="handleTagLink" href="#">
       <b-img src="../assets/images/banner.png" style="min-height: 35vh;" rounded alt="banner image" fluid-grow></b-img>
     </a>
   </div> <!-- root -->
