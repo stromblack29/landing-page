@@ -1,8 +1,8 @@
 <template>
   <div>
-    <LandingHeader title="ไม้จิ้มฟัน ราคาถูก" link="https://business.facebook.com/casiojib/?ref=your_pages" />
+    <LandingHeader title="circus789 บาคาร่า | สล็อตออนไลน์" link="https://circus789.com/register.php" />
     <Nuxt />
-    <LandingFooter title="ไม้จิ้มฟัน ราคาถูก | ทำมาจากสมุนไพร" />
+    <LandingFooter title="circus789 บาคาร่า | สล็อตออนไลน์" />
   </div>
 </template>
 

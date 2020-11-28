@@ -1,7 +1,7 @@
 <template>
     <div class="links">
         <div class="text-center mt-4">
-            <a @click="handleTagLink('https://lin.ee/sDepxjZ')" href="https://lin.ee/sDepxjZ" rel="nofollow"><img src="~/assets/images/add-line.png" width="250px" alt="Add line"></a>
+            <a @click="handleTagLink('https://lin.ee/6zOZZHz')" href="#" rel="nofollow"><img src="~/assets/images/add-line.png" width="250px" alt="Add line"></a>
         </div>
     </div>
 </template>

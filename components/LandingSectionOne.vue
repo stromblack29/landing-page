@@ -2,32 +2,63 @@
     <div class="section features-6">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="info info-horizontal info-hover-primary">
-              <div class="description pl-4">
-                <h5 class="title">
-                  About us
-                </h5>
-                <p>
-                  ไม้จิ้มฟัน คือชิ้นไม้หรือพลาสติกหรือวัสดุอื่น ลักษณะเป็นแท่งสั้น ๆ ขนาดเล็ก มีปลายแหลมหนึ่งหรือสองข้าง เป็นอุปกรณ์เพื่อใช้กำจัดเศษอาหารหรือสิ่งสกปรกตามซอกฟัน โดยเฉพาะหลังรับประทานอาหาร ในประเทศไทยไม้จิ้มฟันมักทำมาจากไม้ไผ่ โดยการฝานไม้ไผ่ให้บาง ตัดพอดีชิ้น สุดท้ายลับและเหลาให้คม ปัจจุบันมักผลิตโดยเครื่องจักร
-                </p>
-              </div>
-            </div>
+          <div class="col-lg-12">
+            <a href="#" @click="handleTagLink">
+              <b-img fluid-grow src="../assets/images/3StepRegister.png"></b-img>
+            </a>
           </div>
-          <div class="col-lg-6 col-10 mx-md-auto">
-            <b-img fluid src="../assets/images/about.png" alt="about-us"></b-img>
+          <div class="col-lg-12">
+            <a href="#" @click="handleTagLink">
+              <b-img fluid-grow src="../assets/images/CIRCUS789GameFinal.png"></b-img>
+            </a>
+          </div>
+          <div class="col-lg-6 mr-auto">
+            <a href="#" @click="handleTagLink">
+              <b-img fluid src="../assets/images/Bonus50.png"></b-img>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a href="#" @click="handleTagLink">
+              <b-img fluid src="../assets/images/ItemPoint.png"></b-img>
+            </a>
+          </div>
+          <div class="col-lg-12">
+            <a href="#" @click="handleTagLink">
+              <b-img fluid src="../assets/images/olduserbonus10.png"></b-img>
+            </a>
           </div>
         </div>
       </div>
     </div>
 </template>
-
+<script>
+export default {
+  props: {
+      link: String,
+    },
+  computed: {
+    Link () {
+      return !this.link ? 'https://www.google.co.th/' : this.link;
+    },
+  },
+  methods: {
+    handleTagLink(e) {
+      gtag_report_conversion(this.Link);
+      // console.log('handleTagLink');
+    },
+  }
+}
+</script>
 <style scoped>
 @import '../assets/argon-design-system.css';
 .section {
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-image: url('../assets/images/bg-about.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .description {
   font-size: 0.875rem;
