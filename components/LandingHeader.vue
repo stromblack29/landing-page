@@ -1,16 +1,24 @@
 <template>
-  <div>
-    <!-- As a heading -->
-    <b-navbar toggleable :type="isScroll ? 'dark' : 'light'" :variant="isScroll ? 'dark' : 'light'"  fixed="top">
-      <b-navbar-brand tag="h1" class="mb-0">{{ Title }}</b-navbar-brand>
-      <b-navbar-nav class="ml-auto">
-        <b-button size="md" class="my-2 my-sm-0" :variant="isScroll ? 'outline-success' : 'success'" @click="handleTagLink" href="#">สมัครสมาชิก</b-button>
-      </b-navbar-nav>
-    </b-navbar>
-    <a onclick="handleTagLink" href="#">
-      <b-img src="../assets/images/banner.png" style="min-height: 35vh;" rounded alt="banner image" fluid-grow></b-img>
-    </a>
+<div>
+  <!-- As a heading -->
+  <b-navbar toggleable :type="isScroll ? 'dark' : 'light'" :variant="isScroll ? 'dark' : 'light'" >
+    <b-navbar-brand tag="h1" class="mb-0" style="margin-right: 0px!important">{{ Title }}</b-navbar-brand>
+    <b-navbar-nav class="ml-auto">
+      <b-button size="sm" class="my-2 my-sm-0" :variant="isScroll ? 'outline-success' : 'success'" @click="handleTagLink" href="#">สมัครสมาชิก</b-button>
+    </b-navbar-nav>
+  </b-navbar>
+  <div class="section">
+    <b-container fluid>
+      <b-row no-gutters cols-lg="12">
+        <b-col cols="12">
+        <a @click="handleTagLink" href="#">
+          <b-img src="../assets/images/Aboutusfinalclear.png" rounded alt="banner image" fluid-grow></b-img>
+        </a>
+        </b-col>
+      </b-row>
+    </b-container>
   </div> <!-- root -->
+</div>
 </template>
 <script>
 export default {
@@ -58,6 +66,15 @@ export default {
 </script>
 
 <style>
+.section {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: url('../assets/images/bg-about.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .section-shaped {
   position: relative;
   overflow: hidden;
