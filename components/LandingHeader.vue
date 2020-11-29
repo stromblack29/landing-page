@@ -7,7 +7,7 @@
       <b-button size="sm" class="my-2 my-sm-0" :variant="isScroll ? 'outline-success' : 'success'" @click="handleTagLink" href="#">สมัครสมาชิก</b-button>
     </b-navbar-nav>
   </b-navbar>
-  <div class="section">
+  <div class="section-bg">
     <b-container fluid>
       <b-row no-gutters cols-lg="12">
         <b-col cols="12">
@@ -65,8 +65,8 @@ export default {
 }
 </script>
 
-<style>
-.section {
+<style scope>
+.section-bg {
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
