@@ -1,8 +1,8 @@
 <template>
   <div>
-    <LandingHeader title="circus789 บาคาร่า | สล็อตออนไลน์" link="https://circus789.com/register.php" />
+    <LandingHeader title="circus789 บาบาร่า | สล็อคออนไลน์" link="https://circus789.com/register.php" />
     <Nuxt />
-    <LandingFooter title="circus789 บาคาร่า | สล็อตออนไลน์" />
+    <LandingFooter title="circus789 บาบาร่า | สล็อคออนไลน์" />
   </div>
 </template>
 
