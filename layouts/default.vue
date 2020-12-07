@@ -1,11 +1,32 @@
 <template>
   <div>
-    <LandingHeader title="circus789 บาบาร่า | สล็อคออนไลน์" link="https://circus789.com/register.php" />
+    <template v-if="isWhite === true">
+      <WHeader :title="Title" :link="Link" />
+    </template>
+    <template v-else>
+      <LandingHeader :title="Title" :link="Link" />
+    </template>
     <Nuxt />
-    <LandingFooter title="circus789 บาบาร่า | สล็อคออนไลน์" />
+    <LandingFooter :title="Title" />
   </div>
 </template>
-
+<script>
+export default {
+  computed: {
+    Title () {
+      return this.isWhite === true ? 'ไม้จิ้มฟัน ราคาถูก | ทำมาจากสมุนไพร' : 'circus789 บาบาร่า | สล็อคออนไลน์';
+    },
+    Link () {
+      return this.isWhite === true ? 'https://business.facebook.com/casiojib/?ref=your_pages' : 'https://circus789.com/register.php';
+    }
+  },
+  data () {
+    return {
+      isWhite: true
+    }
+  }
+}
+</script>
 <style>
 html {
   font-family:
